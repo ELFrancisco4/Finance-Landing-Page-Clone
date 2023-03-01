@@ -1,0 +1,15 @@
+@mixin display-flex($direction, $gap, $orientation) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $orientation;
+    gap: $gap;
+}
+
+@mixin word-break($width){
+    width: $width;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+

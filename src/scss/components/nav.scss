@@ -1,0 +1,31 @@
+@use '../partials/mixins' as m;
+.nav{
+    background-color: var(--background-color);  
+    height: 20vh;
+    @include m.display-flex(row, 0px, space-between);
+    padding: .8em;
+
+    ul{
+        @include m.display-flex(row, 50px, space-evenly);
+    }
+    svg{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.signup{
+    @include m.display-flex(row, 0px, center);
+    cursor: pointer;
+    svg{
+        width: 10%;
+        height: 10%;
+        fill: #fff;
+    }
+    input{
+        font-weight: bold;
+        color: #fff;
+        background: none;
+        border: none;
+    }
+}
