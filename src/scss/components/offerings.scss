@@ -1,0 +1,23 @@
+@use '../partials/mixins' as m;
+@use '../partials/fonts';
+
+.container{
+    border: solid 3px red;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    padding: 3em;
+
+    &_services{
+        @include m.display-flex(column, 10px, space-evenly);
+        align-items: flex-start;
+        @include m.word-break(300px)
+    }
+}
+
+.account{
+    border: solid 2px yellow;
+    height: 80%;
+    width: 100%;
+}

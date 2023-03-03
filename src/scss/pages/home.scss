@@ -1,0 +1,53 @@
+@use '../partials//mixins' as m;
+
+.home {
+  background-color: var(--background-color);
+  height: 100vh;
+  color: var(--text-color);
+  @include m.display-flex(column, 0px, space-between);
+  &_details{
+    @include m.display-flex(row, 40px, space-between);
+    padding: 2em;
+    width: 100%;
+    &_text{
+      @include m.display-flex(column, 22px, space-between);
+      align-items: flex-start;
+      text-align: start;
+      @include m.word-break(300px);
+      h1{
+        font-size: 50px;
+      }
+    }
+  }
+  
+}
+
+.companies{
+  background: var(--light-blue);
+  width: 100%;
+  margin-top: 50px;
+  padding: 1em;
+  @include m.display-flex(row, 0px, space-evenly);
+  height: 20vh;
+  svg{
+    height: 100px;
+    width: 100px;
+  }
+}
+.image_container{
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    height: 550px;
+    width: 550px;
+    img{
+      transform: rotate(230deg);
+      opacity: .8;  
+      height: 70%;
+      border: solid 2px var(--text-color);
+      border-radius: 10px;
+    }
+}
