@@ -1,3 +1,4 @@
+import Benefits from "./components/Benefits/molecules/Benefits";
 import Home from "./components/Home/molecules/Home";
 import Nav from "./components/Nav/molecules/Nav";
 import OfferingsSection from "./components/Offerings/molecules/OfferingsSection";
@@ -9,6 +10,7 @@ const App = () => {
       <Nav />
       <Home/>
       <OfferingsSection/>
+      <Benefits/>
     </div>
   );
 };

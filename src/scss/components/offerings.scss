@@ -2,13 +2,12 @@
 @use '../partials/fonts';
 
 .container{
-    border: solid 3px red;
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     margin-top: 100px;
     padding: 3em;
-
+    gap: 10px;
     &_services{
         @include m.display-flex(column, 10px, space-evenly);
         align-items: flex-start;
@@ -17,7 +16,19 @@
 }
 
 .account{
-    border: solid 2px yellow;
-    height: 80%;
-    width: 100%;
+    border: solid 2px var(--gray-1);
+    height: 400px;
+    width: 400px;
+    padding: 2em;
+    @include m.display-flex(column, 10px, space-evenly);
+    align-items: start;
+    align-content: start;
+    text-align: start;
+    div{
+        border: solid 2px #fff;
+        width: 40px;
+    }
+    svg{
+        background-color: var(--text-color);
+    }
 }

@@ -1,0 +1,28 @@
+@use '../partials/mixins' as m;
+
+.benefits {
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+  h2{
+    font-size: 56px;
+  }
+  @include m.display-flex(row, 10px, space-between);
+  img{
+    width: 50%;
+    height: 50%;
+  }
+
+  &_details{
+    height: 50%;
+    @include m.display-flex(column, 50px, space-evenly);
+    @include m.word-break(500px);
+    padding: 1em;
+    align-items: flex-start;
+  }
+
+  &_metrics{
+    width: 80%;
+    @include m.display-flex(row, 10px, space-evenly);
+  }
+}
